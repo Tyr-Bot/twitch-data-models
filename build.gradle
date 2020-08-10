@@ -30,3 +30,11 @@ dependencies {
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
 }
+
+task exportGradleConfig() {
+    new File("$projectDir/src/main/resources", "gradleConfig").text = "version=$version"
+}
+
+compileJava {
+    dependsOn exportGradleConfig
+}
