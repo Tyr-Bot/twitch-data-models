@@ -32,7 +32,11 @@ dependencies {
 }
 
 task exportGradleConfig() {
-    new File("$projectDir/src/main/resources", "gradleConfig").text = "version=$version"
+    File configPath = file("$projectDir/src/main/resources/")
+    configPath.mkdirs()
+    File configFile = file("$projectDir/src/main/resources/gradleConfig")
+    configFile.createNewFile()
+    configFile.text = "version=$version"
 }
 
 compileJava {
