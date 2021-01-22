@@ -1,8 +1,9 @@
 package com.github.tyrbot.twitchdatamodels.irc.messages.channel;
 
 import com.github.tyrbot.twitchdatamodels.irc.IrcChannel;
+import com.github.tyrbot.twitchdatamodels.irc.messages.IrcMessage;
 
-public class RoomStateMessage {
+public class RoomStateMessage implements IrcMessage {
     
     public final IrcChannel ircChannel;
     public final String roomId;

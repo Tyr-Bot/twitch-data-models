@@ -4,9 +4,10 @@ import java.util.Map;
 import java.util.Set;
 
 import com.github.tyrbot.twitchdatamodels.irc.IrcChannel;
+import com.github.tyrbot.twitchdatamodels.irc.messages.IrcMessage;
 import com.github.tyrbot.twitchdatamodels.irc.messages.UserNoticeType;
 
-public class UserNoticeMessage {
+public class UserNoticeMessage implements IrcMessage {
     
     public final IrcChannel ircChannel;
     public final Map<String, Integer> badgeInfo;

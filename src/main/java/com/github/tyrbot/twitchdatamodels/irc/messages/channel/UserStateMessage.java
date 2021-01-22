@@ -3,8 +3,9 @@ package com.github.tyrbot.twitchdatamodels.irc.messages.channel;
 import java.util.Map;
 
 import com.github.tyrbot.twitchdatamodels.irc.IrcChannel;
+import com.github.tyrbot.twitchdatamodels.irc.messages.IrcMessage;
 
-public class UserStateMessage {
+public class UserStateMessage implements IrcMessage {
     
     public final IrcChannel ircChannel;
     public final Map<String, Integer> badgeInfo;

@@ -4,8 +4,9 @@ import java.util.Map;
 import java.util.Set;
 
 import com.github.tyrbot.twitchdatamodels.irc.IrcChannel;
+import com.github.tyrbot.twitchdatamodels.irc.messages.IrcMessage;
 
-public class PrivMsgMessage {
+public class PrivMsgMessage implements IrcMessage {
     
     public final IrcChannel ircChannel;
     public final Map<String, Integer> badgeInfo;
