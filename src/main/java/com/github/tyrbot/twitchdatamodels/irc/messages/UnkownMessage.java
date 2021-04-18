@@ -1,3 +1,5 @@
+package com.github.tyrbot.twitchdatamodels.irc.messages;
+
 public class UnkownMessage implements IrcMessage {
     
     public final String messageContent;
